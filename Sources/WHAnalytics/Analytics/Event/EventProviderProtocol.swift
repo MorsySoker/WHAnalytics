@@ -10,8 +10,8 @@ import Foundation
 public struct AnalyticsServiceProvider: OptionSet {
     public let rawValue: UInt
     
-    static let firebase = AnalyticsServiceProvider(rawValue: 1 << 0)
-    static let `default` = AnalyticsServiceProvider([])
+    public static let firebase = AnalyticsServiceProvider(rawValue: 1 << 0)
+    public static let `default` = AnalyticsServiceProvider([])
     
     public init(rawValue: UInt) {
         self.rawValue = rawValue
