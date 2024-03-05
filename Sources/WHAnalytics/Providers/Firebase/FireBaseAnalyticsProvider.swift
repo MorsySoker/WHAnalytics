@@ -29,4 +29,6 @@ public final class FireBaseAnalyticsProvider: AnalyticsProviderProtocol {
     public func setUserProperty(for property: String, value: String) {
         Analytics.setUserProperty(value, forName: property)
     }
+    
+    public init() {}
 }
