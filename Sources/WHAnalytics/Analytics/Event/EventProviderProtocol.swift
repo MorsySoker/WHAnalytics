@@ -25,7 +25,7 @@ public protocol EventProviderProtocol: EventNameProviderProtocol {
 }
 
 extension EventProviderProtocol where Self: RawRepresentable, RawValue == String {
-    var name: EventName {
+    public var name: EventName {
         self.rawValue
     }
 }
